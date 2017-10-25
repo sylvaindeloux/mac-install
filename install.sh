@@ -1,3 +1,5 @@
+#!/bin/sh
+
 export HOMEBREW_NO_EMOJI=1
 
 if test ! $(which brew)
