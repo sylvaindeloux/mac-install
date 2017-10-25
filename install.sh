@@ -14,10 +14,13 @@ brew install git
 brew install wget
 brew tap caskroom/cask
 
-function mas_install() {
+function mas_install () {
     mas list | grep -i "$1" > /dev/null
 
-    if [ ! "$?" == 0 ]; then
+    if [ "$?" == 0 ]; then
+        echo "==> $1 est déjà installée"
+    else
+        echo "==> Installation de $1..."
         mas search "$1" | { read app_ident app_name ; mas install $app_ident ; }
     fi
 }
@@ -26,7 +29,7 @@ function mas_install() {
 
 mas_install "1Password"
 mas_install "Bitcoin Ticker"
-mas_install "Datum" 
+mas_install "Datum"
 mas_install "Kaleidoscope"
 mas_install "MacTracker"
 mas_install "Pixelmator"
