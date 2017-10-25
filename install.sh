@@ -12,6 +12,7 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 brew install mas
 brew install git
 brew install wget
+brew install uptimed
 brew tap caskroom/cask
 
 function mas_install () {
@@ -28,6 +29,7 @@ function mas_install () {
 # Applications App Store
 
 mas_install "1Password"
+mas_install "Amphetamine"
 mas_install "Bitcoin Ticker"
 mas_install "Datum"
 mas_install "Kaleidoscope"
@@ -46,7 +48,9 @@ brew cask install docker
 brew cask install dropbox
 brew cask install firefox
 brew cask install google-chrome
+brew cask install istat-menus5
 brew cask install iterm2
+brew cask install kitematic
 brew cask install molotov
 brew cask install multifirefox
 brew cask install mysqlworkbench
