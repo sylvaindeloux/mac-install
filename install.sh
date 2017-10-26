@@ -21,14 +21,9 @@ function mas_install () {
     if [ "$?" == 0 ]; then
         echo "==> $1 est déjà installée"
     else
-        echo "==> Installation de $1..."
         mas search "$1" | { read app_ident app_name ; mas install $app_ident ; }
     fi
 }
-
-echo "Identifiant App Store : " 
-read APPLE_ID
-mas signin $APPLE_ID
 
 # Applications App Store
 
