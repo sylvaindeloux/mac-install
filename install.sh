@@ -15,33 +15,23 @@ brew install wget
 brew install uptimed
 brew tap caskroom/cask
 
-function mas_install () {
-    mas list | grep -i "$1" > /dev/null
-
-    if [ "$?" == 0 ]; then
-        echo "==> $1 est déjà installée"
-    else
-        mas search "$1" | { read app_ident app_name ; mas install $app_ident ; }
-    fi
-}
-
 # Applications App Store
 
-mas_install "1Password"
-mas_install "Amphetamine"
-mas_install "Bitcoin Ticker"
-mas_install "Datum"
-mas_install "Kaleidoscope"
-mas_install "Keynote"
-mas_install "MacTracker"
-mas_install "Numbers"
-mas_install "Pages"
-mas_install "Pixelmator"
-mas_install "Pocket"
-mas_install "Radium"
-mas_install "Reeder"
-mas_install "Transmit"
-mas_install "Tweetbot"
+mas install 443987910 # 1Password
+mas install 937984704 # Amphetamine
+mas install 998255317 # Bitcoin Ticker
+mas install 824225823 # Datum
+mas install 587512244 # Kaleidoscope
+mas install 409183694 # Keynote
+mas install 430255202 # Mactracker
+mas install 409203825 # Numbers
+mas install 409201541 # Pages
+mas install 407963104 # Pixelmator
+mas install 568494494 # Pocket
+mas install 597611879 # Radium
+mas install 880001334 # Reeder
+mas install 803453959 # Slack
+mas install 557168941 # Tweetbot
 
 # Autres applications
 
@@ -59,13 +49,13 @@ brew cask install molotov
 brew cask install multifirefox
 brew cask install mysqlworkbench
 brew cask install onyx
-brew cask install paw
+brew cask install paw # do not install Mac App Store version
 brew cask install phpstorm
 brew cask install sequel-pro
-brew cask install slack
 brew cask install sourcetree
 brew cask install spotify
 brew cask install sublime-text
+brew cask install transmit
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install vlc
