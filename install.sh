@@ -26,6 +26,10 @@ function mas_install () {
     fi
 }
 
+echo "Identifiant App Store : " 
+read APPLE_ID
+mas signin $APPLE_ID
+
 # Applications App Store
 
 mas_install "1Password"
@@ -33,8 +37,12 @@ mas_install "Amphetamine"
 mas_install "Bitcoin Ticker"
 mas_install "Datum"
 mas_install "Kaleidoscope"
+mas_install "Keynote"
 mas_install "MacTracker"
+mas_install "Numbers"
+mas_install "Pages"
 mas_install "Pixelmator"
+mas_install "Pocket"
 mas_install "Radium"
 mas_install "Reeder"
 mas_install "Transmit"
@@ -43,6 +51,7 @@ mas_install "Tweetbot"
 # Autres applications
 
 brew cask install atom
+brew cask install capture-one
 brew cask install cleanmymac
 brew cask install docker
 brew cask install dropbox
