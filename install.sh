@@ -41,7 +41,7 @@ brew cask install docker
 brew cask install dropbox
 brew cask install firefox
 brew cask install google-chrome
-brew cask install istat-menus5
+brew cask install istat-menus
 brew cask install iterm2
 brew cask install kitematic
 brew cask install molotov
