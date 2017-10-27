@@ -30,7 +30,6 @@ mas install 407963104 # Pixelmator
 mas install 568494494 # Pocket
 mas install 597611879 # Radium
 mas install 880001334 # Reeder
-mas install 803453959 # Slack
 mas install 557168941 # Tweetbot
 
 # Autres applications
@@ -52,12 +51,13 @@ brew cask install onyx
 brew cask install paw # do not install Mac App Store version
 brew cask install phpstorm
 brew cask install sequel-pro
+brew cask install slack # do not install Mac App Store version
 brew cask install sourcetree
 brew cask install spotify
 brew cask install sublime-text
 brew cask install transmit
 brew cask install vagrant
-brew cask install virtualbox
+#brew cask install virtualbox # 5.2 is not yet compatible with Vagrant
 brew cask install vlc
 brew cask install wireshark
 
