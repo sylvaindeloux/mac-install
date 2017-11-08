@@ -13,6 +13,7 @@ brew install mas
 brew install git
 brew install wget
 brew install uptimed
+brew install node
 brew tap caskroom/cask
 
 # Applications App Store
