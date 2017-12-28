@@ -56,7 +56,6 @@ brew cask install slack # do not install Mac App Store version
 brew cask install sourcetree
 brew cask install spotify
 brew cask install sublime-text
-brew cask install transmit
 brew cask install vagrant
 #brew cask install virtualbox # 5.2 is not yet compatible with Vagrant
 brew cask install vlc
